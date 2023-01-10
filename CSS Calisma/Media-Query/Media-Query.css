@@ -1,0 +1,50 @@
+body{
+    background-color: blue;
+}
+h1{
+    font-size: 20px;
+}
+/* farklı çözünürlüklere göre ezebilirsin media ile*/
+@media screen and (max-width:700px){ /*ekran 700 px ve altındaysa buradakileri yapıyor*/
+    h1{
+        font-size: 16px;
+    }
+    body{
+        background-color: green;
+    }
+}
+
+@media screen and (max-width:400px){ /*ekran 700 px ve altındaysa buradakileri yapıyor*/
+    h1{
+        font-size: 12px;
+    }
+    body{
+        background-color: palevioletred;
+    }
+}
+
+.box{
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    border:1px solid black;
+    float:left;
+}
+*{
+    box-sizing: border-box; /*görmezden geliyor sınırları calc kullanmaya gerek kalmıyor*/
+}
+
+
+
+@media screen and (max-width:400px){
+    .box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .box{
+        width: 25%;
+    }
+}
+

@@ -1,0 +1,71 @@
+/*bu şekilde yazınca genel bir container ve box tanımlanmış oldu, ardından bazı aralıklarda değişime gitmesi söylendi, eğer hepsi birer media içinde yer alsaydı o değerler dışında sayfa boş olurdu*/
+
+.container {
+    width: 1326px;
+    border: 2px solid red;
+    margin: auto;
+    box-sizing: border-box; /*borderlerın da dahil olması için kutuya*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px; /*cevap: taşmadan kaynaklı ????üstten 10 px verince sayfanın kayması tamam ama neden scrol oluşuyor yana doğru anlamadım.(sayfaya 1346 vermişim aslında 1326 onu düzeltince düzeldi */
+  }
+
+  .container-box {
+    width: 300px;
+    height: 300px;
+    background-color: chocolate;
+    margin-bottom: 10px;
+  }
+
+@media screen and (min-width: 1300px) {
+  .container {
+    border: 2px solid black;
+    justify-content: space-around;
+  }
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1299px) {
+    .container {
+    width: 880px;
+    }
+
+  .container-box {
+    background-color:cornflowerblue;
+  }
+}
+/********************************************************/
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.menu{
+    height: 50px;
+    line-height: 50px;/*satırlar arası boşluğu ayarlamak için*/
+    width: calc(100% - 30px);
+    background-color: gray;
+    padding-left: 30px;
+}
+
+li{
+    float: left;
+    margin-right: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+    .menu{
+        height: 100px;
+    }
+}

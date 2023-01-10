@@ -1,0 +1,30 @@
+.img{
+    width: 100px;
+    height: 100px;
+    /* float: none; */ /*div içinde tanımlıydı onun içinde göründü*/
+    float: bottom; /* div içinde olsa da arka plandan etkilenmedi(left ve right için)*/
+}
+.div-img{
+    background-color: plum;
+}
+
+.div1{
+    background-color: red;
+    /* padding: 15px; */
+    width: 50px;
+}
+.div2{
+    background-color: blue;
+    /* width: 50px; */
+    float: left;
+}
+.div3{
+    background-color: green;
+    width: 50px;
+    clear: right;
+}
+.resim-metin{
+    margin-right: 15px;
+    float: left;
+}
+/*clear özelliği, kayan bir öğenin yanındaki öğeye ne olması gerektiğini belirtir*/

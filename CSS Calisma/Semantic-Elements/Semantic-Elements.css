@@ -1,0 +1,100 @@
+/*artical: bulunduğu sayfadan bağımsız duracak, bazıları section içine artical yazar bazıları da tam tersi ama sorun değil. bir makalenin bölümleri var diye düşünebilirsin*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: bisque; */
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    background-color: coral;
+    font-weight: 800;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;/*height nin yarısını verince tam yuvarlak oluyor*/
+    text-align: center;
+    line-height: 50px;
+}
+
+nav{
+    height: 100px;
+    width: 80%;
+    background-color: lightcoral;
+    margin: 0px auto;
+    display: flex;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 24;
+    text-decoration: none;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+article{
+    width: 80%;
+    background-color:khaki;
+    padding: 20px;
+}
+
+section{
+    background-color:rgb(168, 175, 182);
+    color: wheat;
+    margin-bottom: 30px;
+}
+
+.img-class{
+    width: 50%;
+}
+
+aside{ /*daha az öneme sahip olan yer, reklam veya eksstra navbar lar için kullanılabilir*/
+
+    width: 20%;
+    background-color: lightsteelblue;
+}
+
+footer{
+    height: 100px;
+    background-color: plum;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

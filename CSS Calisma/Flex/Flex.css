@@ -1,0 +1,37 @@
+html, body, div{
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-cards{
+    height: 50vh;
+    width: calc(100vw - 4px);
+    /* border eklendiğinde de taşmaya dikkat et, calc() ile çıkarma işlemi yap. cal()içini yazarken boşluk bırakmayı unutma, çalışmaz!*/
+    border: 2px solid black;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*wrap: iç cards da benim verdiğim değerleri kullan, nowrap: benim verdiğim değer önemli değil, içerideki itemları sıkıştır*/
+}
+/* flex-direction: column dendiğinde y ekseninde taşmaya izin vermez ama x ekseninde taşma gerçekleşebilir */
+/* flex-direction: row dendiğinde x ekseninde taşmaya izin vermez ama y ekseninde taşma gerçekleşebilir */
+
+.flex-cards div{
+    /* width: 400px; */
+    
+    width: calc(50vw - 6px);
+    margin: 2px;
+    
+    
+}
+.card1{
+    background-color:coral;
+}
+.card2{
+    background-color: cornflowerblue;
+}
+.card3{
+    background-color: darkcyan;
+}
+.card4{
+    background-color: darkolivegreen;
+}

@@ -1,0 +1,53 @@
+html{
+    background-color: beige;
+}
+body{
+    background-color: darkkhaki;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+p{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+span{
+    background-color: gray;
+    
+}
+
+.navbar-desktop{
+    display: none;
+}
+.navbar-desktop li{
+
+    display: inline-block;
+    height: 20px;
+    width: 60px;
+    background-color: rgb(148, 144, 179);
+    
+}
+
+.navbar-mobil{
+    display: inline-block;
+}
+
+.navbar-mobil li{
+
+    display: block;
+    margin: 10px;
+    height: 20px;
+    width: 60px;
+    background-color: rgb(148, 144, 179);
+    
+}
+
+li>a{
+    text-decoration: none;
+    color:wheat;
+}
+

@@ -1,0 +1,42 @@
+body{
+    background-color: purple;
+}
+
+table {
+    border: 1px solid gray;
+    padding: 30px;
+    border-spacing: 0px; 
+    background-color: white;
+    border-radius: 10px;
+}
+
+thead{
+    background-color: antiquewhite; 
+}
+
+tbody>tr:nth-child(even){
+    background-color: rgb(230, 250, 251);
+}
+
+tbody td{
+    text-align: center;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    padding: 10px;
+}
+
+/* @media screen and (max-width: 500px){
+    
+    td{
+        position: relative;
+    }
+} */
+.fa{
+    color: gainsboro;
+    
+}
+
+.checked {
+    color: purple;
+}
+
+

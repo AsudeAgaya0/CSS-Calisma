@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--head de css çalışmıyor-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Display.css">
+</head>
+<body>
+    <!-- block: parent' ın width i kadar uzar-->
+    <!-- block: width değeri küçük olsa dahi birden fazlası yanyana gelmezler, bunu çözmek için display özelliği değiştirip kullanabiliriz örn: display:inline; -->
+    
+    <div>
+        <p>text</p>
+    </div>
+
+    <div>
+        <p>text1</p>
+    </div>
+
+    <!-- inline olabildiğince az yer kaplamaya çalışır-->
+    <!-- inline: birden fazla inline tag tanımlanırsa, yanyana gelirler. display özelliği değiştirilerek alt satıra geçirilebilir örn:display:block;-->
+    <span>span denemesi</span>
+    <a href="#">anasayfa</a>
+
+    <!-- inline lar width ve heigth değerinden etkilenmezler. Bunun çözümü olarak inline-block kullanılır-->
+    <!-- inline-block lar en çok navigation larda(navbar) kullanılır-->
+    <br/>
+    <ul class="navbar-desktop">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#account">Account</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+    </ul>
+
+    <ul class="navbar-mobil">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#account">Account</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+    </ul>
+
+
+</body>
+</html>

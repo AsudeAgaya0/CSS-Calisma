@@ -1,0 +1,35 @@
+/* body {
+    background-image: url('higanbana.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size:contain;
+} */
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+th, td {
+    background-color: #96D4D4;
+}
+p{
+    margin: 0px 100px 5px 0px;
+}
+
+.div-class{
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    position: absolute ; 
+    /*static: sayfanın normal akışı için kullanılır. left right gibi özelliklerden etkilenmez*/
+    /*relative: left right gibi özelliklerden faydalanabilir, normal konuma göre konumlanmış, nesneye boşluk veriliyor sen kafana göre takılıyorsun ama absolute de ona yer verilmiyor üstüne geliyor*/
+    /*absolute: normal akıştan çıkar sen yönlendirirsin*/
+    /*fixed: tarayıcının viewportuna göre sabit konum alması isteniyorsa kullanılır*/
+    /*sticky: sayfayı kaydırırken senin istediğin pozisyona gelince durur*/
+}
+
+.sticky {
+    position: sticky;
+    top: 100px;
+    width: 250px;
+    border: 4px solid red;
+}

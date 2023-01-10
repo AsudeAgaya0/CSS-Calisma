@@ -1,0 +1,67 @@
+.div-class div{ /* div-class içindeki div lere aşağıdakleri işle demek oluyor. */
+    background-color: royalblue ;
+}
+
+.div-class>p{ /* yukarıdakinin farklı versiyonu*/
+    color: pink ;
+}
+.div-class>.div2-class>p{
+    color:white;
+}
+.div2-class p{ /* yukarıdakinin aynısı büyük ihtimalle > öncelik alıyor sor????????????????*/
+    color:aquamarine;
+}
+
+h2,h3,p{
+    margin:0px;
+}
+.div-class{
+    border: 2px solid gray; 
+    margin: 5px 100px ; /* tek değer atadığında her yerden verir fakat y ekseninde farklı x eksaninde farklı margin vermek istiyorsam iki değer verirsin ilki y ikinci x ekseni için*/
+    
+    background-color: beige;
+    padding: 30px;
+}
+
+/* button{
+    margin-left: 50px;
+    margin-top: 50px;
+} */
+.btn2{
+    margin-left: 0px;
+}
+
+.div3-class{
+    width: 50%;
+    height: 10rem;/*rem: piksel değeri, 16px=1rem*/
+    background-color: darkolivegreen;
+    margin:20px;
+    
+
+}
+
+.div4-class{
+    width: 100%;
+    height: 100px;/*rem: piksel değeri, 16px=1rem*/
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    border:2px solid black;
+   
+   
+}
+
+.div5-class{
+    width: 50%; /*50vw deyince ekranın yüzde ellisini aldı, diğer türlü parent ın yarısını alır yüzde koyarak*/
+    height: 100px;/*rem: piksel değeri, 16px=1rem*/
+    background-color:blueviolet;
+    margin:10px;
+}
+
+.div6-class{
+    background-color: lightgreen;
+    margin:20px 50px;
+}
+
+
+

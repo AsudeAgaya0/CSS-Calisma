@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.media{
+    display: flex;
+    align-items: flex-start;
+    background-color: antiquewhite;
+    padding: 16px;
+    max-width: 500px;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+.media-object{
+    width: 100px;
+    margin-right: 16px;
+}  
+
+.media-heading{
+    margin: 0 0 8px;
+}
+
+.img-right{
+    order: 1;/*bu arkadaşa 1 verince diğerleri otomatik 0 almış oldu, o yüzden sağ tarafa geçti*/
+}
+
+.media-inner{
+    margin-left: 0px;
+    margin-right: 0px;
+}
